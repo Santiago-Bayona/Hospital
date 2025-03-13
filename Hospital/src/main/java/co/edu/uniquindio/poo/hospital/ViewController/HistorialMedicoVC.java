@@ -312,16 +312,12 @@ public class HistorialMedicoVC {
         if (selectedHistorialMedico != null) {
             // Clonar el historial seleccionado usando el controlador
             boolean clonado = historialMedicoController.clonarHistorial(selectedHistorialMedico);
-
-            // Actualizar la lista y la tabla si la clonación fue exitosa
-            if (clonado) {
-                listaHistorial.add(selectedHistorialMedico.clone());
+             listaHistorial.add(selectedHistorialMedico.clone());
                 tb_Historial.refresh();
                 System.out.println("Historial clonado exitosamente.");
             } else {
                 System.out.println("Error al clonar el historial.");
             }
-        }
     }
 
     /**
