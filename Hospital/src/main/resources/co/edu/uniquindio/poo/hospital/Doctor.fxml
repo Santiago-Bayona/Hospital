@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.hospital.ViewController.DoctorVC">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5581e8" height="200.0" layoutX="-28.0" layoutY="-138.0" stroke="BLACK" strokeType="INSIDE" width="637.0" />
+      <TableView fx:id="tb_Doctor" layoutX="-12.0" layoutY="249.0" prefHeight="170.0" prefWidth="620.0">
+        <columns>
+          <TableColumn fx:id="tbc_Nombre" prefWidth="123.19999408721924" text="Nombre" />
+          <TableColumn fx:id="tbc_Apellido" prefWidth="103.19999694824219" text="Apellido" />
+            <TableColumn fx:id="tbc_Edad" prefWidth="90.20002746582031" text="Edad" />
+            <TableColumn fx:id="tbc_Cedula" prefWidth="105.39996337890625" text="Cedula" />
+            <TableColumn fx:id="tbc_Especialidad" prefWidth="199.39999389648438" text="Especialidad" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="84.0" text="Nombre" />
+      <Label layoutX="32.0" layoutY="132.0" text="Apellido" />
+      <Label layoutX="32.0" layoutY="180.0" text="Cedula" />
+      <TextField fx:id="txt_Nombre" layoutX="87.0" layoutY="80.0" />
+      <TextField fx:id="txt_Apellido" layoutX="87.0" layoutY="128.0" />
+      <TextField fx:id="txt_Cedula" layoutX="87.0" layoutY="176.0" />
+      <Label layoutX="32.0" layoutY="218.0" text="Edad" />
+      <TextField fx:id="txt_Edad" layoutX="87.0" layoutY="214.0" />
+      <ComboBox fx:id="cmbx_Especialidad" layoutX="258.0" layoutY="80.0" prefWidth="150.0" promptText="Especialidad" />
+      <Button fx:id="btt_Agregar" layoutX="429.0" layoutY="167.0" mnemonicParsing="false" onAction="#AgregarDoctor" prefHeight="26.0" prefWidth="68.0" text="Agregar" />
+      <Button fx:id="btt_Actualizar" layoutX="523.0" layoutY="167.0" mnemonicParsing="false" onAction="#ActualizarDoctor" text="Actualizar" />
+      <Button fx:id="btt_Eliminar" layoutX="429.0" layoutY="214.0" mnemonicParsing="false" onAction="#EliminarDoctor" prefHeight="26.0" prefWidth="68.0" text="Eliminar" />
+      <Button fx:id="btt_Limpiar" layoutX="523.0" layoutY="213.0" mnemonicParsing="false" onAction="#LimpiarDoctor" prefHeight="26.0" prefWidth="68.0" text="Limpiar" />
+      <Label layoutX="268.0" layoutY="14.0" prefHeight="30.0" prefWidth="130.0" text="Doctor" textFill="#faf8f8">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Volver" layoutY="1.0" mnemonicParsing="false" onAction="#Volver" text="Volver" />
+   </children>
+</AnchorPane>

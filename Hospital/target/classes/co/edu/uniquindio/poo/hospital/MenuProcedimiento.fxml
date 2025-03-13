@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.hospital.ViewController.MenuProcedimientoVC">
+   <children>
+      <Circle fill="#09168f" layoutX="77.0" layoutY="179.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#09168f" layoutX="310.0" layoutY="187.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="113.0" layoutY="14.0" text="Procedimientos">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btt_CitaMedica" layoutX="39.0" layoutY="148.0" mnemonicParsing="false" onAction="#RegistrarCitaMedica" text="Cita Medica" />
+      <Button fx:id="btt_Consulta" layoutX="260.0" layoutY="148.0" mnemonicParsing="false" onAction="#RegistrarConsulta" text="Consulta" />
+      <Button fx:id="btt_Volver" layoutY="-1.0" mnemonicParsing="false" onAction="#Volver" text="Volver" />
+   </children>
+</Pane>

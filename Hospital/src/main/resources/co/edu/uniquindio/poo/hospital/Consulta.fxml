@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="523.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.hospital.ViewController.ConsultaVC">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="95.0" layoutX="-2.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="1061.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#5581e8" />
+                  <Stop color="#5580e597" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="Volver" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Volver" text="Volver" />
+      <Label layoutX="426.0" layoutY="13.0" prefHeight="65.0" prefWidth="206.0" text="Consulta" textAlignment="CENTER" textFill="#faf8f8">
+         <font>
+            <Font name="Impact" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="141.0" prefHeight="37.0" prefWidth="72.0" text="ID Consulta:" />
+      <TextField fx:id="txt_IdConsulta" layoutX="149.0" layoutY="148.0" prefHeight="27.0" prefWidth="150.0" />
+      <Label layoutX="28.0" layoutY="182.0" prefHeight="37.0" prefWidth="94.0" text="Fecha Consulta:" />
+      <DatePicker fx:id="date_Consulta" layoutX="151.0" layoutY="188.0" prefHeight="27.0" prefWidth="150.0" />
+      <Label layoutX="17.0" layoutY="223.0" prefHeight="37.0" prefWidth="163.0" text="Diagnostico Consulta: " />
+      <TextField fx:id="txt_Diagnostico" layoutX="150.0" layoutY="228.0" prefHeight="27.0" prefWidth="150.0" />
+      <TableView fx:id="tb_Consulta" layoutX="178.0" layoutY="321.0" prefHeight="167.0" prefWidth="703.0">
+         <columns>
+            <TableColumn fx:id="tbc_IdConsulta" text="ID Consulta" />
+            <TableColumn fx:id="tbc_FechaConsulta" prefWidth="145.0" text="Fecha Consulta" />
+            <TableColumn fx:id="tbc_Diagnostico" prefWidth="100.0" text="Diagnostico" />
+            <TableColumn fx:id="tbc_nombreMedicamento" prefWidth="133.0" text="Nombre Medicamento" />
+            <TableColumn fx:id="tbc_Dosis" prefWidth="101.0" text="Dosis" />
+            <TableColumn fx:id="tbc_Cita" prefWidth="143.0" text="Cita" />
+         </columns>
+      </TableView>
+      <Button fx:id="btt_Agregar" layoutX="38.0" layoutY="321.0" mnemonicParsing="false" onAction="#AgregarConsulta" prefHeight="31.0" prefWidth="78.0" text="Agregar" />
+      <Button fx:id="btt_Actualizar" layoutX="36.0" layoutY="365.0" mnemonicParsing="false" onAction="#ActualizarConsulta" prefHeight="31.0" prefWidth="88.0" text="Actualizar" />
+      <Button fx:id="btt_Eliminar" layoutX="38.0" layoutY="413.0" mnemonicParsing="false" onAction="#EliminarConsulta" prefHeight="31.0" prefWidth="81.0" text="Eliminar" />
+      <Button fx:id="btt_Limpiar" layoutX="39.0" layoutY="461.0" mnemonicParsing="false" onAction="#LimpiarConsulta" prefHeight="31.0" prefWidth="87.0" text="Limpiar" />
+      <TableView fx:id="tb_CitaMedica" layoutX="368.0" layoutY="137.0" prefHeight="136.0" prefWidth="411.0">
+         <columns>
+            <TableColumn fx:id="tbc_CodigoCita" prefWidth="205.0" text="Codigo Cita" />
+            <TableColumn fx:id="tbc_FechaCita" prefWidth="205.0" text="Fecha" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tb_Medicamento" layoutX="814.0" layoutY="137.0" prefHeight="136.0" prefWidth="208.0">
+         <columns>
+            <TableColumn fx:id="tbc_nombreMedicamento1" prefWidth="103.31536865234375" text="Medicamento" />
+            <TableColumn fx:id="tbc_dosis" prefWidth="103.68463134765625" text="Dosis" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="523.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.hospital.ViewController.CitaMedicaVC">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="95.0" layoutX="-2.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="906.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#5581e8" />
+                  <Stop color="#5580e597" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="Volver" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Volver" text="Volver" />
+      <Label layoutX="346.0" layoutY="13.0" prefHeight="65.0" prefWidth="206.0" text="Cita Médica" textAlignment="CENTER" textFill="#faf8f8">
+         <font>
+            <Font name="Impact" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="110.0" prefHeight="37.0" prefWidth="72.0" text="Código Cita:" />
+      <TextField fx:id="txt_CodigoCita" layoutX="125.0" layoutY="115.0" />
+      <Label layoutX="27.0" layoutY="156.0" prefHeight="37.0" prefWidth="72.0" text="Fecha Cita:" />
+      <DatePicker fx:id="date_Cita" layoutX="124.0" layoutY="160.0" prefHeight="27.0" prefWidth="162.0" />
+      <Label layoutX="29.0" layoutY="205.0" prefHeight="37.0" prefWidth="72.0" text="Hora Cita:" />
+      <TextField fx:id="txt_HoraCita" layoutX="126.0" layoutY="209.0" prefHeight="27.0" prefWidth="163.0" />
+      <TableView fx:id="tb_CitaMedica" layoutX="240.0" layoutY="318.0" prefHeight="167.0" prefWidth="459.0">
+        <columns>
+          <TableColumn fx:id="tbc_CodigoCita" prefWidth="81.48043823242188" text="Código Cita" />
+          <TableColumn fx:id="tbc_FechaCita" prefWidth="70.51956939697266" text="Fecha" />
+            <TableColumn fx:id="tbc_HoraCita" prefWidth="97.4447021484375" text="Hora" />
+            <TableColumn fx:id="tbc_nombre" prefWidth="101.5552978515625" text="Nombre" />
+            <TableColumn fx:id="tbc_cedula" prefWidth="105.39996337890625" text="Cedula" />
+        </columns>
+      </TableView>
+      <Button fx:id="btt_Agregar" layoutX="106.0" layoutY="303.0" mnemonicParsing="false" onAction="#AgregarCita" prefHeight="31.0" prefWidth="78.0" text="Agregar" />
+      <Button fx:id="btt_Actualizar" layoutX="101.0" layoutY="353.0" mnemonicParsing="false" onAction="#ActualizarCita" prefHeight="31.0" prefWidth="88.0" text="Actualizar" />
+      <Button fx:id="btt_Eliminar" layoutX="104.0" layoutY="407.0" mnemonicParsing="false" onAction="#EliminarCita" prefHeight="31.0" prefWidth="81.0" text="Eliminar" />
+      <Button fx:id="btt_Limpiar" layoutX="102.0" layoutY="458.0" mnemonicParsing="false" onAction="#LimpiarCita" prefHeight="31.0" prefWidth="87.0" text="Limpiar" />
+      <TableView fx:id="tb_Paciente" layoutX="365.0" layoutY="125.0" prefHeight="136.0" prefWidth="202.0">
+         <columns>
+            <TableColumn fx:id="tbc_nombrePaciente" prefWidth="99.11456298828125" text="Paciente" />
+            <TableColumn fx:id="tbc_cedulaPaciente" prefWidth="100.13177490234375" text="Cedula" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tb_Doctor" layoutX="634.0" layoutY="125.0" prefHeight="136.0" prefWidth="207.0">
+         <columns>
+            <TableColumn fx:id="tbc_nombreDoctor" prefWidth="101.82257080078125" text="Doctor" />
+            <TableColumn fx:id="tbc_cedulaDoctor" prefWidth="104.450439453125" text="Cedula" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
