@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.hospital.ViewController.MedicamentoVC">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#09168f" height="147.0" stroke="BLACK" strokeType="INSIDE" width="766.0" />
+        <Label layoutX="299.0" layoutY="36.0" text="Medicamentos" textFill="WHITE">
+            <font>
+                <Font name="Playbill" size="74.0" />
+            </font>
+        </Label>
+        <Label layoutX="54.0" layoutY="179.0" text="Nombre:">
+            <font>
+                <Font name="Tw Cen MT Condensed Extra Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="54.0" layoutY="238.0" text="ID:">
+            <font>
+                <Font name="Tw Cen MT Condensed Extra Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="296.0" text="Dosis:">
+            <font>
+                <Font name="Tw Cen MT Condensed Extra Bold" size="27.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNombreMedicamento" layoutX="180.0" layoutY="178.0" prefHeight="31.0" prefWidth="258.0" />
+        <TextField fx:id="txtIdMedicamento" layoutX="180.0" layoutY="237.0" prefHeight="31.0" prefWidth="258.0" />
+        <TextField fx:id="txtDosisMedicamento" layoutX="180.0" layoutY="295.0" prefHeight="31.0" prefWidth="258.0" />
+        <Button fx:id="btnAgregarMedicamento" layoutX="517.0" layoutY="178.0" mnemonicParsing="false" onAction="#agregarMedicamentoAction" prefHeight="31.0" prefWidth="85.0" text="Agregar" />
+        <Button fx:id="btnActualizarMedicamento" layoutX="517.0" layoutY="253.0" mnemonicParsing="false" onAction="#actualizarMedicamentoAction" text="Actualizar" />
+        <Button fx:id="btnEliminarMedicamento" layoutX="646.0" layoutY="178.0" mnemonicParsing="false" onAction="#eliminarMedicamentoAction" prefHeight="31.0" prefWidth="85.0" text="Eliminar" />
+        <Button fx:id="btnLimpiarTablaMedicamentos" layoutX="646.0" layoutY="253.0" mnemonicParsing="false" onAction="#limpiartablaMedicamentosAction" prefHeight="31.0" prefWidth="85.0" text="Limpiar" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5581e8" height="418.0" layoutY="356.0" stroke="BLACK" strokeType="INSIDE" width="766.0" />
+        <TableView fx:id="tableMedicamentos" layoutX="10.0" layoutY="365.0" prefHeight="336.0" prefWidth="744.0">
+            <columns>
+                <TableColumn fx:id="columnNombreMedicamento" prefWidth="269.0" text="Nombre" />
+                <TableColumn fx:id="columnIdMedicamento" prefWidth="238.0" text="ID" />
+                <TableColumn fx:id="columnDosisMedicamento" prefWidth="236.0" text="Dosis" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnRegresar" layoutX="350.0" layoutY="713.0" mnemonicParsing="false" onAction="#regresarAction" text="Regresar" />
+    </children>
+</AnchorPane>

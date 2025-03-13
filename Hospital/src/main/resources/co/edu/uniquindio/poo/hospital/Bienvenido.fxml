@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.hospital.ViewController.BienvenidoVC">
+   <children>
+      <Circle fill="#09168f" layoutX="116.0" layoutY="122.0" radius="184.0" stroke="#008f39" strokeType="INSIDE" />
+      <Label layoutX="14.0" layoutY="90.0" prefHeight="89.0" prefWidth="247.0" text="San Juan" textFill="#fcfcfc">
+         <font>
+            <Font name="Stencil" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="29.0" text="Bienvenido">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btt_Persona" layoutX="375.0" layoutY="107.0" mnemonicParsing="false" onAction="#AbrirPersona" prefHeight="31.0" prefWidth="116.0" text="Persona" />
+      <Button fx:id="btt_Procedimiento" layoutX="375.0" layoutY="200.0" mnemonicParsing="false" onAction="#AbrirProcedimiento" prefHeight="29.0" prefWidth="116.0" text="Procedimiento" />
+      <Button fx:id="btt_Otros" layoutX="375.0" layoutY="292.0" mnemonicParsing="false" onAction="#AbiriOtros" prefHeight="29.0" prefWidth="116.0" text="Otros" />
+   </children>
+</Pane>
